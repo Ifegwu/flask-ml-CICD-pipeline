@@ -43,7 +43,7 @@ I generate ssh-keys with ssh-keygen in Azure Cloud enviironment, and integrate i
 ![project-cloned-into-azure-cloud-shell](https://user-images.githubusercontent.com/9282421/188196800-a60514f5-1f2d-47ca-a20f-234d7cdd937a.png)
 ![repo](https://user-images.githubusercontent.com/9282421/188197221-9d7e4da9-6acf-4d31-a9cd-4c0b89a2a492.png)
 
-# Makefile
+### Makefile
 ```
 pip install --upgrade pip &&\
   	pip install -r requirements.txt
@@ -56,7 +56,7 @@ lint:
 
 all: install lint test
 ```
-# requirements.txt
+### requirements.txt
 ```
 Flask==2.1.1
 pandas==1.3.5
@@ -70,12 +70,12 @@ pytest==7.1.2
 locust
 jinja2==3.0
 ```
-# Virtual Environment
+### Virtual Environment
 ```
 python3 -m venv ~/.myrepo
 source ~/.myrepo/bin/activate
 ```
-# Local install and test
+### Local install and test
 ####
 ```
 (.myrepo) daniel [ ~/flask-ml-CICD-pipeline ]$ make all
@@ -83,7 +83,7 @@ source ~/.myrepo/bin/activate
 ![make-all3](https://user-images.githubusercontent.com/9282421/188201592-a9075cc7-9afb-45e0-8ce9-6c95ced28461.png)
 ![make-all4](https://user-images.githubusercontent.com/9282421/188201606-c7f0bf92-2b06-4095-901a-098fb27e778f.png)
 
-# Configuring Github Actions
+### Configuring Github Actions
 ####
 Github Actions enables performing CI/CD
 ```
@@ -112,12 +112,21 @@ jobs:
       run: |
         make test
 ```
-# CI: Github Action performing CI job
+### CI: Github Action performing CI job
 ![github-action-build](https://user-images.githubusercontent.com/9282421/188202728-47c4a4ed-31d1-4f4c-8750-795135d133a7.png)
 
-# Azure App Service deployment
+### Azure App Service deployment
 ```
 (.myrepo) daniel [ ~/flask-ml-CICD-pipeline ]$  az webapp up -n flaslmlapp
 ```
 ![webapp-deployed](https://user-images.githubusercontent.com/9282421/188203795-05708617-51c3-47ba-a900-34ff619fa31e.png)
 
+### On running above command, you can visit the app url to confirm if the app is up and running.
+Here is the url link for this app service: https://flaskmlapp.azurewebsites.net/
+![sklearn-prediction-home](https://user-images.githubusercontent.com/9282421/188204914-cb824f67-1400-4009-a336-e77eee5e4daf.png)
+
+### Showing logs of your running webapp via Azure Cloud shell
+```
+(.myrepo) daniel [ ~/flask-ml-CICD-pipeline ]$ az webapp log tail
+```
+![az-webapp-log-tail](https://user-images.githubusercontent.com/9282421/188206177-1bb74210-777a-44e1-af80-efb7a42d4fdf.png)
