@@ -17,7 +17,7 @@ This project shows how to build a Continuous Integration (CI) and Continuous Del
 ![CICD](https://user-images.githubusercontent.com/9282421/188189186-38ab2fa1-f631-49cb-86cc-f9d0b907c3d6.png)
 ####
 
-# Status
+### Status
 ####
 [![Python application test with Github Actions](https://github.com/Ifegwu/flask-ml-CICD-pipeline/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Ifegwu/flask-ml-CICD-pipeline/actions/workflows/main.yml)
 
@@ -138,4 +138,34 @@ In using the parameters above, locust will use 20 users with a spawn rate of 5 u
  (.myrepo) daniel [ ~/flask-ml-CICD-pipeline ]$ locust -f locustfile.py --headless -u 20 -r 5 -t 20s
  ```
  ![locustfile](https://user-images.githubusercontent.com/9282421/188207007-80e1747c-dd60-4163-b56a-929b217e37c8.png)
+ 
+####
+### Setting up CI/CD using Azure Pipeline
+####
+* Visit Azure DevOps Organisations, create a new project called Flask-ML-CICD
+* Ensure new service connection is setup via Azure Resource Manager and Pipeline
+* Goto organizations setting > new service connection (under pipeline) > Azure Resource Manager
+* Select Pipeline and create a new one
+* Create the GitHub Integration
+* Configure python to Linux Web app on Azure
+* Set up the continuous delivery workflow
+
+![CICD-using-Azure-Pipelines](https://user-images.githubusercontent.com/9282421/188208285-9b6478bc-e089-41c5-be0d-6a1c0b20e44a.png)
+![jobs-in-run](https://user-images.githubusercontent.com/9282421/188208319-6ce7de2e-117a-49c5-a80c-a26aa535d0b1.png)
+
+From now on every change to your code will trigger the CI/CD pipeline and update your webapp as shown in image below:
+
+![cicdjobs](https://user-images.githubusercontent.com/9282421/188209235-baee3dae-944c-4bce-9530-7abd98fe5f91.png)
+
+# Improvements
+#### 
+Future enhancement of this app include:
+* Designing a good user interface for app
+
+# Demo Video
+####
+### The demo vidoe for this app can be found [here]()
+
+### Status
+[![Python application test with Github Actions](https://github.com/Ifegwu/flask-ml-CICD-pipeline/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Ifegwu/flask-ml-CICD-pipeline/actions/workflows/main.yml)
 
