@@ -82,3 +82,42 @@ source ~/.myrepo/bin/activate
 ```
 ![make-all3](https://user-images.githubusercontent.com/9282421/188201592-a9075cc7-9afb-45e0-8ce9-6c95ced28461.png)
 ![make-all4](https://user-images.githubusercontent.com/9282421/188201606-c7f0bf92-2b06-4095-901a-098fb27e778f.png)
+
+# Configuring Github Actions
+####
+Github Actions enables performing CI/CD
+```
+name: Python application test with Github Actions
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    - name: Install dependencies
+      run: |
+        make install
+    - name: Lint with pylint
+      run: |
+        make lint
+    - name: Test with pytest
+      run: |
+        make test
+```
+# CI: Github Action performing CI job
+![github-action-build](https://user-images.githubusercontent.com/9282421/188202728-47c4a4ed-31d1-4f4c-8750-795135d133a7.png)
+
+# Azure App Service deployment
+```
+(.myrepo) daniel [ ~/flask-ml-CICD-pipeline ]$  az webapp up -n flaslmlapp
+```
+![webapp-deployed](https://user-images.githubusercontent.com/9282421/188203795-05708617-51c3-47ba-a900-34ff619fa31e.png)
+
