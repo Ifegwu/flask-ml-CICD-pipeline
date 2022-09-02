@@ -160,7 +160,7 @@ From now on every change to your code will trigger the CI/CD pipeline and update
 # Improvements
 #### 
 Future enhancement of this app include:
-* Designing a good user interface for app
+* Designing a good user interface for this app
 
 # Demo Video
 ####
