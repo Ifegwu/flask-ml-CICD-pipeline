@@ -130,3 +130,12 @@ Here is the url link for this app service: https://flaskmlapp.azurewebsites.net/
 (.myrepo) daniel [ ~/flask-ml-CICD-pipeline ]$ az webapp log tail
 ```
 ![az-webapp-log-tail](https://user-images.githubusercontent.com/9282421/188206177-1bb74210-777a-44e1-af80-efb7a42d4fdf.png)
+
+### Performance validation of the webapp can be performed via a load test using locust. You can replace '<yourappname>' in the provided configuration and call locust:
+In using the parameters above, locust will use 20 users with a spawn rate of 5 users per second and run for 20 seconds:
+
+ ```
+ (.myrepo) daniel [ ~/flask-ml-CICD-pipeline ]$ locust -f locustfile.py --headless -u 20 -r 5 -t 20s
+ ```
+ ![locustfile](https://user-images.githubusercontent.com/9282421/188207007-80e1747c-dd60-4163-b56a-929b217e37c8.png)
+
