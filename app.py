@@ -3,8 +3,8 @@ from flask.logging import create_logger
 import logging
 
 import pandas as pd
-# from sklearn.externals import joblib
-import joblib
+from sklearn.externals import joblib
+# import joblib
 from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
@@ -70,4 +70,4 @@ def predict():
     return jsonify({'prediction': prediction})
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=3000, debug=True)
+    app.run(host='0.0.0.0', port=8000, debug=True)
