@@ -37,7 +37,7 @@ The [trello board](https://trello.com/b/YdVOTHFs/project-2-building-azure-ci-cd-
 # Continuous Integration
 ## Setting Up Azure Cloud Development Environment
 ####
-I generate ssh-keys with ssh-keygen in Azure Cloud enviironment, and integrate it to Github. This will enable interraction between Github repos and Azure Cloud shell.
+To prepare the Azure cloud shell, we have to first generate ssh-keys with ssh-keygen in Azure Cloud enviironment, and integrate it to Github. This will enable interraction between Github repos and Azure Cloud shell.
 
 
 ![project-cloned-into-azure-cloud-shell](https://user-images.githubusercontent.com/9282421/188196800-a60514f5-1f2d-47ca-a20f-234d7cdd937a.png)
