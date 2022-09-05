@@ -1,7 +1,7 @@
 [![Python application test with Github Actions](https://github.com/Ifegwu/flask-ml-CICD-pipeline/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Ifegwu/flask-ml-CICD-pipeline/actions/workflows/main.yml)
 
 # flask-ml-CICD-pipeline
-Delivering a flask machine learning application with Azure cloud DevOps CI/CD pipeline
+Building a CI/CD pipeline With Azure Cloud and Github repository
 
 ####
 # Overview
@@ -37,7 +37,7 @@ The [trello board](https://trello.com/b/YdVOTHFs/project-2-building-azure-ci-cd-
 # Continuous Integration
 ## Setting Up Azure Cloud Development Environment
 ####
-I generate ssh-keys with ssh-keygen in Azure Cloud enviironment, and integrate it to Github. This will enable interraction between Github repos and Azure Cloud shell.
+To prepare the Azure cloud shell, we have to first generate ssh-keys with ssh-keygen in Azure Cloud enviironment, and integrate it to Github. This will enable interraction between Github repos and Azure Cloud shell.
 
 
 ![project-cloned-into-azure-cloud-shell](https://user-images.githubusercontent.com/9282421/188196800-a60514f5-1f2d-47ca-a20f-234d7cdd937a.png)
@@ -177,6 +177,12 @@ In using the parameters above, locust will use 20 users with a spawn rate of 5 u
 From now on every change to your code will trigger the CI/CD pipeline and update your webapp as shown in image below:
 
 ![cicdjobs](https://user-images.githubusercontent.com/9282421/188209235-baee3dae-944c-4bce-9530-7abd98fe5f91.png)
+
+### Final pull and push to update both local and github repo
+####
+![final-pull](https://user-images.githubusercontent.com/9282421/188456672-6e9acf02-37d9-42f0-91ed-b91c0c11c111.png)
+![uptodate](https://user-images.githubusercontent.com/9282421/188456687-fb81406c-99a9-4e3e-80b0-d9b7ad020f41.png)
+
 
 # Improvements
 #### 
