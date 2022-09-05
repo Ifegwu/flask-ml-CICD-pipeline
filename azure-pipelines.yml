@@ -11,13 +11,13 @@ variables:
   azureServiceConnectionId: '4699f039-f611-4a6c-bb72-61f43c6a4c95'
 
   # Web app name
-  webAppName: 'predictionapp2'
+  webAppName: 'flaskmlapp'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'predictionapp2'
+  environmentName: 'flaskmlapp'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
