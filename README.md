@@ -1,7 +1,7 @@
 [![Python application test with Github Actions](https://github.com/Ifegwu/flask-ml-CICD-pipeline/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Ifegwu/flask-ml-CICD-pipeline/actions/workflows/main.yml)
 
 # flask-ml-CICD-pipeline
-Delivering a flask machine learning application with Azure cloud DevOps CI/CD pipeline
+Building a CI/CD pipeline With Azure Cloud and Github repository
 
 ####
 # Overview
