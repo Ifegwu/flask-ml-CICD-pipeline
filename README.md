@@ -83,6 +83,21 @@ source ~/.myrepo/bin/activate
 ![make-all3](https://user-images.githubusercontent.com/9282421/188201592-a9075cc7-9afb-45e0-8ce9-6c95ced28461.png)
 ![make-all4](https://user-images.githubusercontent.com/9282421/188201606-c7f0bf92-2b06-4095-901a-098fb27e778f.png)
 
+### Making a local Machine Learning prediction
+####
+#### First: running the webserver
+```
+(.myrepo) daniel [ ~/flask-ml-CICD-pipeline ]$ python appy
+```
+![local-runs](https://user-images.githubusercontent.com/9282421/188450751-84fac183-f7c7-4d56-878c-df663fb0612b.png)
+
+#### Second: make prediction
+```
+(.myrepo) daniel [ ~/flask-ml-CICD-pipeline ]$ ./make_prediction.sh
+```
+![local-prediction](https://user-images.githubusercontent.com/9282421/188451336-2267dd3c-ba03-48b5-a17d-047b68bc11a4.png)
+
+
 ### Configuring Github Actions
 ####
 Github Actions enables performing CI/CD
