@@ -191,7 +191,7 @@ Future enhancement of this app include:
 
 # Demo Video
 ####
-### The demo vidoe for this app can be found [here](https://youtu.be/bdUmd29-pi4)
+### The demo vidoe for this app can be found [here](https://youtu.be/9T4JRTRwnU0)
 
 ### Status
 [![Python application test with Github Actions](https://github.com/Ifegwu/flask-ml-CICD-pipeline/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Ifegwu/flask-ml-CICD-pipeline/actions/workflows/main.yml)
