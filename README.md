@@ -131,6 +131,10 @@ jobs:
 ![github-action-build](https://user-images.githubusercontent.com/9282421/188202728-47c4a4ed-31d1-4f4c-8750-795135d133a7.png)
 
 ### Azure App Service deployment
+####
+#### Proof of App service deployment as shown in Azure App Service Portal
+![azure-app-service](https://user-images.githubusercontent.com/9282421/189181810-29d9e07e-d493-4a69-8cae-c4f6b714bce0.png)
+
 ```
 (.myrepo) daniel [ ~/flask-ml-CICD-pipeline ]$  az webapp up -n flaslmlapp
 ```
