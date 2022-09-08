@@ -132,13 +132,13 @@ jobs:
 
 ### Azure App Service deployment
 ####
-#### Proof of App service deployment as shown in Azure App Service Portal
-![azure-app-service](https://user-images.githubusercontent.com/9282421/189181810-29d9e07e-d493-4a69-8cae-c4f6b714bce0.png)
-
 ```
 (.myrepo) daniel [ ~/flask-ml-CICD-pipeline ]$  az webapp up -n flaslmlapp
 ```
 ![webapp-deployed](https://user-images.githubusercontent.com/9282421/188203795-05708617-51c3-47ba-a900-34ff619fa31e.png)
+
+#### Proof of App service deployment as shown in Azure App Service Portal
+![azure-app-service](https://user-images.githubusercontent.com/9282421/189181810-29d9e07e-d493-4a69-8cae-c4f6b714bce0.png)
 
 ### On running above command, you can visit the app url to confirm if the app is up and running.
 Here is the url link for this app service: https://flaskmlapp.azurewebsites.net/
