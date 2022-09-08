@@ -26,10 +26,10 @@ Project Plan
 
 SpreedSheet
 ####
-Here is a [spreedsheet](https://docs.google.com/spreadsheets/d/1u1nSlc4LZyaczjHNPETdtgFpjrzZU6eWWhQxa-Ft8Xo/edit#gid=0) for the project management deliverables which contains weekly, quarterly, yearly plans.
+Here is a [spreedsheet](https://docs.google.com/spreadsheets/d/1u1nSlc4LZyaczjHNPETdtgFpjrzZU6eWWhQxa-Ft8Xo/edit#gid=0) link for the project management deliverables which contains weekly, quarterly, yearly plans.
 
 # Trello Board
-The [trello board](https://trello.com/b/YdVOTHFs/project-2-building-azure-ci-cd-pipeline) contains the project management progressions. The workflow is simplified in 3 stages based on:
+Her is a [trello board](https://trello.com/b/YdVOTHFs/project-2-building-azure-ci-cd-pipeline) link which contains the project management progressions of this project. The workflow is simplified in 3 stages based on:
 * To Do,
 * In Progress, and
 * Done
@@ -137,12 +137,12 @@ jobs:
 ```
 ![webapp-deployed](https://user-images.githubusercontent.com/9282421/188203795-05708617-51c3-47ba-a900-34ff619fa31e.png)
 
-#### Proof of App service deployment as shown in Azure App Service Portal
-![azure-app-service](https://user-images.githubusercontent.com/9282421/189181810-29d9e07e-d493-4a69-8cae-c4f6b714bce0.png)
-
 ### On running above command, you can visit the app url to confirm if the app is up and running.
 Here is the url link for this app service: https://flaskmlapp.azurewebsites.net/
 ![sklearn-prediction-home](https://user-images.githubusercontent.com/9282421/188204914-cb824f67-1400-4009-a336-e77eee5e4daf.png)
+
+#### Proof of App service deployment as shown in Azure App Service Portal
+![azure-app-service](https://user-images.githubusercontent.com/9282421/189181810-29d9e07e-d493-4a69-8cae-c4f6b714bce0.png)
 
 ### Showing logs of your running webapp via Azure Cloud shell
 ```
